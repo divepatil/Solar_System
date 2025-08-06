@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('Huawei\ Wallpapers.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    overflow: hidden;
+
+
+}
+
+#neptune {
+    position: relative;
+    height: 900px;
+    width: 900px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: planet-rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes planet-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#neptune1 {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+}
+
+#uranus {
+    position: relative;
+    height: 800px;
+    width: 800px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#uranus1 {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
+#saturn {
+    position: relative;
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#saturn1 {
+    position: absolute;
+    right: -75px;
+}
+
+#jupiter {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jupiter1 {
+    position: absolute;
+    left: -30px;
+    bottom: 160px
+}
+
+#mars {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mars1 {
+    position: absolute;
+    top: -30px;
+}
+
+#earth {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#earth1 {
+    position: absolute;
+    right: -45px;
+}
+
+
+#venus {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#venus1 {
+    position: absolute;
+    right: -40px;
+}
+
+#mercury {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mercury1 {
+    position: absolute;
+    top: -30px;
+}
+
+#sun {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#sun1 {
+    animation: sun-rotate 10s linear infinite;
+}
+
+
+
+@keyframes sun-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* chatgpt */
+
+#neptune {
+    animation: planet-rotate 40s linear infinite;
+}
+
+#uranus {
+    animation: planet-rotate 36s linear infinite;
+}
+
+#saturn {
+    animation: planet-rotate 32s linear infinite;
+}
+
+#jupiter {
+    animation: planet-rotate 28s linear infinite;
+}
+
+#mars {
+    animation: planet-rotate 24s linear infinite;
+}
+
+#earth {
+    animation: planet-rotate 20s linear infinite;
+}
+
+#venus {
+    animation: planet-rotate 16s linear infinite;
+}
+
+#mercury {
+    animation: planet-rotate 12s linear infinite;
+}
+
+#neptune {
+    width: 900px;
+    height: 900px;
+    animation: planet-rotate 40s linear infinite;
+}
+
+#uranus {
+    width: 800px;
+    height: 800px;
+    animation: planet-rotate 36s linear infinite;
+}
+
+#saturn {
+    width: 700px;
+    height: 700px;
+    animation: planet-rotate 32s linear infinite;
+}
+
+#jupiter {
+    width: 600px;
+    height: 600px;
+    animation: planet-rotate 28s linear infinite;
+}
+
+#mars {
+    width: 500px;
+    height: 500px;
+    animation: planet-rotate 24s linear infinite;
+}
+
+#earth {
+    width: 400px;
+    height: 400px;
+    animation: planet-rotate 20s linear infinite;
+}
+
+#venus {
+    width: 300px;
+    height: 300px;
+    animation: planet-rotate 16s linear infinite;
+}
+
+#mercury {
+    width: 200px;
+    height: 200px;
+    animation: planet-rotate 12s linear infinite;
+}
+
+@media (max-width: 768px) {
+    #neptune {}
+}
+
+
+.planet-name {
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
